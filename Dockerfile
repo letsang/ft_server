@@ -6,7 +6,7 @@
 #    By: jtsang <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/02/08 08:44:21 by jtsang            #+#    #+#              #
-#    Updated: 2020/02/10 10:30:42 by jtsang           ###   ########.fr        #
+#    Updated: 2020/02/10 14:41:16 by jtsang           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,4 +22,4 @@ COPY ./srcs/nginx-config ./tmp/nginx-config
 COPY ./srcs/phpmyadmin.inc.php ./tmp/phpmyadmin.inc.php
 COPY ./srcs/wp-config.php ./tmp/wp-config.php
 
-CMD bash start.sh
+CMD bash start.sh && tail -f /dev/null
