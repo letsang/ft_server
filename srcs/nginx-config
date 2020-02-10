@@ -11,8 +11,8 @@ server{
 	server_name localhost;
 
 	ssl on;	
-	ssl_certificate /etc/nginx/ssl/localhost.pem;
-	ssl_certificate_key /etc/nginx/ssl/localhost-key.pem;
+	ssl_certificate /root/localhost.pem;
+	ssl_certificate_key /root/localhost-key.pem;
 
 	root /var/www/localhost;
 	index index.html index.htm index.nginx-debian.html index.php;

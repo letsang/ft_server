@@ -33,15 +33,12 @@ mv wordpress/ /var/www/localhost
 mv /tmp/wp-config.php /var/www/localhost/wordpress
 
 # SET SSL
-mkdir /etc/nginx/ssl
-mkdir /root//mkcert
-cd /root/mkcert
+cd /root/
 wget https://github.com/FiloSottile/mkcert/releases/download/v1.1.2/mkcert-v1.1.2-linux-amd64
 mv mkcert-v1.1.2-linux-amd64 mkcert
 chmod +x mkcert
 ./mkcert -install
 ./mkcert localhost
-cp *.pem /etc/nginx/ssl
 
 service php7.3-fpm start
 service nginx start
