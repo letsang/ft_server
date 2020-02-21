@@ -1,8 +1,8 @@
 COMMAND TO BUILD DOCKER IMAGE
-docker build -t server .
+docker build -t <name> .
 
 COMMAND TO RUN DOCKER CONTAINER
-docker run <option> -p 80:80 -p 443:443 server
+docker run <option> -p 80:80 -p 443:443 <name>
 
 option :
 --env AUTO_INDEX=OFF #TO SET OFF AUTOINDEX FROM LOCALHOST NGINX CONF 
